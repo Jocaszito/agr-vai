@@ -12,7 +12,7 @@ function exibirTextos(tag, texto) {
 
 function textoInicial() {
     exibirTextos('h1', 'Guess Number')
-    exibirTextos('p' , 'Digite Um Número entre 1 e 50 aí, bb') 
+    exibirTextos('p' , 'Digite Um Número entre 1 e 50 ') 
 }
 
 textoInicial();
@@ -28,9 +28,9 @@ function verificarChute() {
          document.getElementById('reiniciar').removeAttribute('disabled');
     } else {
         if (chute < numeroSecreto) {
-            exibirTextos('p', 'o número é maior, mofiu');
+            exibirTextos('p', 'o número é maior');
         } else {
-            exibirTextos('p', 'o número é menor, parceiro');
+            exibirTextos('p', 'o número é menor');
         }
         tentativas++;
         limparCampo();
